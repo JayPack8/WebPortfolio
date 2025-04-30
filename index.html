@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1 class="logo">Your Name</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+          <h2>Full Stack Developer</h2>
+          <p>
+            I build responsive websites and web applications that deliver
+            exceptional user experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-img-container">
+            <img src="https://via.placeholder.com/300" alt="Profile Picture" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="https://via.placeholder.com/400x300" alt="About Me" />
+          </div>
+          <div class="about-text">
+            <p>
+              Hello! I'm a passionate web developer with a strong foundation in
+              both frontend and backend technologies. I enjoy creating
+              responsive, user-friendly websites and applications that solve
+              real-world problems.
+            </p>
+            <p>
+              With experience in web development, I've worked on various
+              projects ranging from simple landing pages to complex web
+              applications. I'm constantly learning and adapting to new
+              technologies.
+            </p>
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-user"></i>
+                <span><strong>Name:</strong> Your Full Name</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-envelope"></i>
+                <span><strong>Email:</strong> your.email@example.com</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span><strong>Location:</strong> Your City, Country</span>
+              </div>
+            </div>
+            <a href="#" class="btn primary-btn" id="download-resume"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="app">App</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-category="web">
+            <div class="project-img">
+              <img src="https://via.placeholder.com/600x400" alt="Project 1" />
+            </div>
+            <div class="project-info">
+              <h3>E-Commerce Website</h3>
+              <p>
+                A full-featured online store with product catalog, shopping
+                cart, and payment integration.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-category="app">
+            <div class="project-img">
+              <img src="https://via.placeholder.com/600x400" alt="Project 2" />
+            </div>
+            <div class="project-info">
+              <h3>Task Management App</h3>
+              <p>
+                A productivity application for managing tasks, projects, and
+                deadlines.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+          <div class="skills-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>HTML</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>CSS</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>JavaScript</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3>Backend Development</h3>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>Node.js</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>Express</span>
+                  <span>70%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>your.email@example.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+1 234 567 8900</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary-btn">
+                Send Message
+              </button>
+            </form>
+            <div id="formStatus" class="form-status"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; <span id="currentYear"></span> Your Name. All Rights Reserved.
+        </p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
